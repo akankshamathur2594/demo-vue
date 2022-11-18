@@ -11,7 +11,13 @@
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
+    
+    <!-- The index page provides your entry point in HTML providing an element for Vue.js to load into and imports file main.js to initialise your application.  -->
+    <!-- A decent place to put your authentication logic is in the router where you can add navigation guards to restrict access to pages based on the current authentication state and send your users to a login page: -->
     <!-- built files will be auto injected -->
+    <link rel = "stylesheet" href = "style.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <div id="app"></div>
+        <script src = "main.js"></script>
   </body>
 </html>
