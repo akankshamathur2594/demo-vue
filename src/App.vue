@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Hi , this is a demo app"/>
+    <CounterComp parentMsg = "Hi, this message is from parent"/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import CounterComp from './components/CounterComp.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    CounterComp
   }
 }
 </script>
@@ -26,3 +28,5 @@ export default {
   margin-top: 60px;
 }
 </style>
+
+<!-- This is typically the root of your application defined in Vue.js Component file format. It's usually something that defines the template for your page -->
